@@ -1,0 +1,11 @@
+# robots.txt for Anas Bin Azim Portfolio
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Disallow any admin or private directories if you add them in future
+# Disallow: /admin/
+# Disallow: /private/

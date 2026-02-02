@@ -2,351 +2,946 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anas Bin Azim</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- *************************Navbar************************* -->
-    <header class="header">
-        <a href="#" class="logo">AnasBinAzim</a>
-        <i class='bx bx-menu' id="menu" style='color:#ffffff'></i>
-        <nav class="navbar">
-            <a href="#home" style="--vlr:1" class="active">Home</a>
-            <a href="#about" style="--vlr:2">About Me</a>
-            <a href="#education" style="--vlr:3">Projects</a>
-            <a href="#skills" style="--vlr:4">Skills</a>
-            <a href="#contact" style="--vlr:5">Contact Me</a>
-        </nav>
-    </header>
-    <!-- *************************Home Section************************* -->
-    <section class="home"  id="home">
-        <div class="text-content">
-            <h1>I'm Anas Bin Azim</h1>
-            <div class="text-animation">
-                <h2>Computer Scientist</h2>
-            </div>
-            <p>Hello! I’m <strong>Anas</strong>, a passionate and results-driven <strong>Computer Scientist</strong> with a degree in <strong>Computer Science and Information Technology</strong> from <strong>NED University</strong>. I possess a strong foundation in software engineering, with a keen interest in <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Data Science</strong>. Over the past year, I have been actively engaged in <strong>Flutter development</strong>, building robust, cross-platform mobile and web applications that prioritize performance and user experience. My expertise also includes <strong>Python</strong> and the <strong>Django framework</strong>, enabling me to design scalable backend systems and dynamic web solutions. In addition, I am skilled in crafting responsive and intuitive user interfaces using <strong>HTML</strong> and <strong>CSS</strong>. I am committed to continuous learning and thrive on solving complex problems through innovative, efficient, and scalable technological solutions.</p>
 
-            <!-- <p>Hello! I’m <strong>Anas</strong>, a dedicated <strong>Software Engineer</strong> with a degree in <strong>Computer Science and Information Technology</strong> from <strong>NED University</strong>. I have a solid foundation in software development and hands-on experience in creating impactful solutions. My expertise lies in <strong>Flutter Development</strong>, with 1 year of market experience building cross-platform mobile and web applications that deliver seamless user experiences. I am also proficient in <strong>Python and Django</strong>, developing efficient Backend systems and dynamic web applications. Additionally, I have strong skills in <strong>HTML</strong> and <strong>CSS</strong>, enabling me to craft responsive and visually appealing user interfaces. I am passionate about solving complex problems, continuously enhancing my skills, and delivering scalable, high-quality solutions that drive value through technology.</p> -->
+  <!--
+    - #MAIN
+  -->
 
-            <!-- <div class="btn-section">
-                <button class="btn">Hire me</button>
-                <button class="btn">Let's Talk</button>
-            </div> -->
-            <div class="btn-section">
-                <a href="https://wa.me/923402746217" target="_blank">
-                    <button class="btn">Hire me</button>
-                </a>
-                <a href="https://wa.me/923193110082" target="_blank">
-                    <button class="btn">Let's Talk</button>
-                </a>
-            </div>
-            <div class="social-media">
+  <main>
 
-                <a href="https://www.linkedin.com/in/anas-bin-azim-451732221/" target="_blank" style="text-decoration: none;">
-        <i class='bx bxl-linkedin' style="--vlr:7"></i></a>
+    <!--
+      - #SIDEBAR
+    -->
 
-        <a href="mailto:anasbinazim90@gmail.com" target="_blank" style="text-decoration: none;">
-        <i class='bx bxl-gmail' style="--vlr:8"></i></a>
-        <a href="https://github.com/Anasbinazim90" target="_blank" style="text-decoration: none;">
-        <i class='bx bxl-github' style="--vlr:9"></i></a>
-            </div>
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Anas Bin Azim" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Anas Bin Azim">Anas Bin Azim</h1>
+
+          <p class="title">Software Engineer</p>
         </div>
-        <img src="MdSay.png" alt="">
-    </section>
-    <!-- *************************About Section************************* -->
-    <section class="about" id="about">
-        <h2 class="title">About <span>Me</span></h2>
-        <img src="MdSay.png" alt="" class="aboutImg">
-        <div class="text-content2">
-            <h2>Computer Scientist</h2>
-            <div  style="text-align: left;" >
-            <!-- <p style="font-size: 16px;">Hello! I’m <strong>Anas</strong>, a passionate and detail-oriented <strong>Software Engineer</strong> with a degree in <strong>Computer Science and Information Technology</strong> from <strong>NED University</strong>. With a strong foundation in software development and a proven track record in building impactful solutions. Having developed expertise in software development, application design, and data-driven problem-solving, I specialize in:</p>
-            <p style="font-size: 16px;"><strong>Flutter Development:</strong> 1 year of market experience creating cross-platform mobile and web applications with a focus on seamless user experience and robust functionality.</p>
-            <p style="font-size: 16px;"><strong>Python and Django:</strong> Proficient in developing efficient back-end systems and dynamic web applications using Python and its Django framework. also skilled in <strong>HTML</strong> and <strong>CSS</strong>, crafting responsive and visually appealing user interfaces.</p>             -->
-            <p style="font-size: 16px;">Hello! I’m <strong>Anas</strong>, a passionate and detail-oriented <strong>Computer Scientist</strong> with a degree in <strong>Computer Science and Information Technology</strong> from <strong>NED University</strong>. I possess a strong foundation in software development, with hands-on experience in designing and delivering impactful, real-world solutions. My focus lies in building intelligent, scalable systems through clean architecture, data-driven development, and user-centric design.</p>
 
-            <p style="font-size: 16px;"><strong>Flutter Development:</strong> Over a year of continuous industry experience in developing cross-platform mobile and web applications using Flutter. I emphasize performance, responsive UI, and maintainable codebases, delivering seamless user experiences across devices.</p>
-            
-            <p style="font-size: 16px;"><strong>Python and Django:</strong> Skilled in building robust back-end systems and scalable web applications using Python and the Django framework. Additionally proficient in <strong>HTML</strong> and <strong>CSS</strong>, with the ability to craft responsive, accessible, and visually appealing interfaces that complement backend logic.</p>
-            
-            <p style="font-size: 16px;">I thrive on solving complex problems, continuously learning, and delivering high-quality, scalable solutions. Whether it’s building elegant mobile apps, implementing efficient back-end systems, or designing responsive UIs, I’m dedicated to creating value through technology.</p>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-            <!-- *************** My Experience ******************* -->
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
 
-            <div class="column">
-                <h2>My Experience</h2>
-                <div class="box">
+      </div>
 
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year">Jan, 2025 - Present <i class='bx bxs-calendar'></i></div>
-                            <h3>FuturByte. Karachi, Pakistan - (Flutter Developer)</h3>
-                            <ul style="font-size: 16px; line-height: 1.8; list-style-type: disc; padding-left: 20px; color: #333;">
-                                <li>
-                                    <strong>Led the development of scalable and maintainable mobile applications</strong> using Flutter and Dart, reducing development time by 30% through efficient code structuring.
-                                </li>
-                                <li>
-                                    <strong>Integrated Node.js-based backend services</strong> to enable real-time data communication and dynamic content rendering across platforms.
-                                </li>
-                                <li>
-                                    <strong>Implemented advanced state management techniques</strong> (GetX) for smooth app performance and better resource utilization.
-                                </li>
-                                <li>
-                                    <strong>Integrated key app features</strong> including Google/Apple social login, push notifications, Agora video/audio calling, and Google Maps support to enhance user engagement and functionality.
-                                </li>
-                            </ul>
-                    
-                            <div class="social-media">
-                                <i class='bx bxl-flutter' style="--vlr:7"></i>
-                                <i class='bx bxl-nodejs' style="--vlr:8"></i>
-            <i class='bx bxl-firebase' style="--vlr:8"></i>
-            <i class='bx bxl-google-cloud' style="--vlr:9"></i>
-                                <i class='bx bxl-git' style="--vlr:9"></i>
-                                <i class='bx bxl-github' style="--vlr:9"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
+      <div class="sidebar-info_more">
 
-                    <div class="education-content">
-    <div class="content">
-        <div class="year">Nov, 2022 - Aug, 2023<i class='bx bxs-calendar'></i></div>
-        <h3>Salsoft Technologies. Karachi, Pakistan - (Jr. Flutter Developer)</h3>
-        <div>
-            <ul style="font-size: 16px; line-height: 1.8; list-style-type: disc; padding-left: 20px; color: #333;">
-                <li>
-                    <strong>Developed and deployed 10+ cross-platform mobile and web applications</strong> using Flutter, ensuring seamless performance and high client satisfaction.
-                </li>
-                <li>
-                    <strong>Collaborated with a team of 5+ developers and designers</strong> to deliver projects on time, integrating APIs and implementing complex UI/UX designs.
-                </li>
-                <li>
-                    <strong>Optimized application performance by 25%</strong> through efficient coding practices, testing, and debugging for Android, iOS, and web platforms.
-                </li>
-                <li>
-                    <strong>Implemented state management techniques (GetX, Provider)</strong> to enhance app scalability and maintainability, contributing to 100% project success rates.
-                </li>
-            </ul>
-        </div>
-        
-        <div class="social-media">
-            <i class='bx bxl-flutter' style="--vlr:7"></i>
-            <i class='bx bxl-python' style="--vlr:7"></i>
-            <i class='bx bxl-firebase' style="--vlr:8"></i>
-            <i class='bx bxl-google-cloud' style="--vlr:9"></i>
-            <i class='bx bxl-mongodb' style="--vlr:9"></i>
-            <i class='bx bxl-git' style="--vlr:9"></i>
-            <i class='bx bxl-github' style="--vlr:9"></i>
-                </div>
-    </div>
-</div>
+        <div class="separator"></div>
 
+        <ul class="contacts-list">
 
-                </div>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-    </section>
-    <!-- *************************Education Section************************* -->
-    <section class="education" id="education">
-        <h2 class="title">My <span>Projects</span></h2>
-        <div class="column">
-            <div class="column">
-                <h2>App Development</h2>
-                <div class="box">
-                    <div class="education-content">
-                        <div class="content">
-    <div class="year">2021-22<i class='bx bxs-calendar'></i></div>
-    <h3>WeChat (Real-time chatting application - Integrated with Firebase)</h3><br><br>
-    <ul style="font-size: 16px;">
-        <li>
-          Designed and developed a <strong>real-time chatting application</strong> for Android and iOS using Flutter and Dart, reaching <strong>99.9% uptime</strong> by integrating Firebase for authentication and real-time database.
-        </li>
-        <li>
-          Leveraged <strong>GetX for state management</strong>, ensuring efficient navigation and a seamless user experience across multiple chat screens.
-        </li>
-        <li>
-          Integrated Firebase Cloud Messaging (FCM) for <strong>100% real-time push notifications</strong>, enhancing user engagement with instant message updates and alerts.
-        </li>
-        <li>
-          Implemented advanced features, including user profiles, online indicators, message timestamps, and offline support, achieving a <strong>20% improvement in app usability metrics</strong>.
-        </li>
-      </ul>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
 
-      <div class="social-media">
-        <i class='bx bxl-flutter' style="--vlr:7"></i>
-        <i class='bx bxl-firebase' style="--vlr:8"></i>
-        <i class='bx bxl-google-cloud' style="--vlr:9"></i>
-        <i class='bx bxl-github' style="--vlr:9"></i>
+              <a href="mailto:anasbinazim90@gmail.com" class="contact-link">anasbinazim90@gmail.com</a>
             </div>
-                        </div>
-                    </div>
-                    <div class="education-content">
-                        <div class="content">
-        <div class="year">2021-22 <i class='bx bxs-calendar'></i></div>
-                            <h3>Blockchain integrated Humanitarian Aid Flutter Application (Aidance - FYDP)</h3><br><br>
-                            <ul style="font-size: 16px;">
-                                <li>
-                                  Developed a <strong>blockchain-integrated Flutter application</strong> enabling secure, immutable transactions through smart contracts, enhancing transparency and trust in humanitarian efforts for <strong>100+ users</strong>.
-                                </li>
-                                <li>
-                                  Designed and implemented a <strong>user-friendly interface</strong> using Flutter and Dart, facilitating real-time tracking of donations, transaction histories, and aid distribution updates, improving user engagement by <strong>30%</strong>.
-                                </li>
-                                <li>
-                                  Utilized <strong>GetX for efficient state management</strong>, ensuring seamless navigation and data synchronization across all user roles.
-                                </li>
-                                <li>
-                                  Integrated Firebase for <strong>secure user authentication</strong> and IPFS for database management, enabling <strong>99.9% secure storage</strong> for donors, beneficiaries, and aid organizations.
-                                </li>
-                              </ul>
 
-                              <div class="social-media">
-                                <i class='bx bxl-flutter' style="--vlr:7"></i>
-                                <i class='bx bxl-firebase' style="--vlr:8"></i>
-                                <i class='bx bxl-google-cloud' style="--vlr:9"></i>
-                                <i class='bx bxl-mongodb' style="--vlr:9"></i>
-                                <i class='bx bxl-github' style="--vlr:9"></i>
-                                    </div>
+          </li>
 
-                        </div>
-                    </div>
-                    <div class="education-content">
-    <div class="content">
-        <div class="year">2021-22 <i class='bx bxs-calendar'></i></div>
-        <h3>PickNPay (Flutter e-commerce application - Deployed on Netlify)</h3><br><br>
-        <ul style="font-size: 16px;">
-            <li>
-              Developed a <strong>full-stack e-commerce mobile application</strong> using Flutter and Dart, featuring a responsive UI with <strong>100+ product listings</strong> and secure purchase management.
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 0;">
+                <a href="tel:+923402746217" class="contact-link">+92 (340) 274-6217</a><span style="color: inherit;">,</span><a href="tel:+923193110082" class="contact-link" style="margin-left: 0;">+92 (319) 311-0082</a>
+              </div>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-05-28">May 28, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Karachi, Sindh, Pakistan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/anas-bin-azim-451732221/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Anasbinazim90" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://wa.me/923402746217" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            A dedicated and results-driven Software Engineer with a strong background in full-stack mobile application development using Flutter and Node.js. 
+            I have a keen interest in Data Analysis & Cloud Technologies. I demonstrate a solid understanding of modern software development practices, 
+            with several certifications completed and others in progress. Committed to continuous learning, professional growth, and delivering high-quality, scalable solutions.
+          </p>
+
+          <p>
+            My expertise spans Flutter development, Node.js backend services, RESTful API design, Firebase integration, and database management. 
+            I specialize in building scalable, production-ready mobile and web applications that prioritize user experience and performance. 
+            My goal is to deliver innovative solutions that align with organizational objectives and user needs.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Flutter Development</h4>
+
+                <p class="service-item-text">
+                  Designing and scaling production-ready Flutter applications with clean architecture, robust state management, and seamless API integrations. Owning the complete mobile app lifecycle, including testing, release management, and publishing on the App Store and Google Play Store.
+                </p>
+              </div>
+
             </li>
-            <li>
-              Implemented <strong>GetX for state management</strong>, ensuring seamless navigation and efficient cart operations, improving checkout efficiency by <strong>25%</strong>.
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Development</h4>
+
+                <p class="service-item-text">
+                  Designing and building scalable backend systems using Node.js, Express.js with clean architecture, secure APIs, and optimized database designs.
+                </p>
+              </div>
+
             </li>
-            <li>
-              Integrated Firebase for <strong>secure user authentication</strong> and database management, achieving <strong>99.9% uptime</strong> for real-time storage and retrieval of user and product data.
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile UI/UX Design</h4>
+
+                <p class="service-item-text">
+                  Beautiful and intuitive user interface design for cross-platform mobile applications.
+                </p>
+              </div>
+
             </li>
-            <li>
-              Utilized <strong>RESTful APIs</strong> to fetch and display real-time product details, manage cart operations, and process orders, handling <strong>50+ transactions daily</strong> with high reliability.
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data & Cloud Technologies</h4>
+
+                <p class="service-item-text">
+                  Designing and implementing scalable data architectures with MongoDB, Firebase real-time databases, and AWS cloud solutions. Expertise in data modeling, cloud deployment strategies, and building robust data pipelines for modern applications.
+                </p>
+              </div>
+
             </li>
+
           </ul>
 
-          <div class="social-media">
-            <i class='bx bxl-flutter' style="--vlr:7"></i>
-            <i class='bx bxl-firebase' style="--vlr:8"></i>
-            <i class='bx bxl-google-cloud' style="--vlr:9"></i>
-            <i class='bx bxl-github' style="--vlr:9"></i>
+        </section>
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Steve Jobs" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Steve Jobs</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "The only way to do great work is to love what you do. Innovation distinguishes between a leader and a follower. 
+                    Stay hungry, stay foolish."
+                  </p>
                 </div>
 
-          
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Bill Gates" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Bill Gates</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life. 
+                    Success is a lousy teacher."
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">NED University of Engineering & Technology</h4>
+
+              <span>2020 — 2024</span>
+
+              <p class="timeline-text">
+                Bachelor of Science in Computer Science and Information Technology with strong foundation in software engineering, algorithms, and system design.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer (Node.js & Flutter)</h4>
+
+              <span>01/Dec/2025 — Current</span>
+
+              <p class="timeline-text">
+                ZyneVentures, Karachi.
+              </p>
+              <ul style="margin-left: 20px; margin-top: 10px; list-style-type: disc; color: hsl(0, 0%, 84%);">
+                <li style="margin-bottom: 8px;">Migrated and modernized 2+ legacy PHP (Laravel) backend systems to Node.js, improving API performance, scalability, and maintainability.</li>
+                <li style="margin-bottom: 8px;">Replaced existing PHP-based APIs with Node.js RESTful services and successfully re-integrated them with Flutter mobile applications, ensuring seamless backend–frontend communication.</li>
+                <li style="margin-bottom: 8px;">Developed and maintained production-ready Flutter applications, implementing clean architecture and efficient state management for scalable mobile solutions.</li>
+                <li style="margin-bottom: 8px;">Actively contributed to requirement analysis, API design, and deployment workflows, supporting the end-to-end development lifecycle.</li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer (Flutter)</h4>
+
+              <span>01/Feb/2025 — 30/Nov/2025</span>
+
+              <p class="timeline-text">
+                FuturByte Technologies, Karachi.
+              </p>
+              <ul style="margin-left: 20px; margin-top: 10px; list-style-type: disc; color: hsl(0, 0%, 84%);">
+                <li style="margin-bottom: 8px;">Developed more than 10 mobile and web applications using Flutter and Dart Programming Language. Worked on connecting apps with RESTful APIs, creating attractive and user-friendly interfaces, and using state management tools like GetX and Provider.</li>
+                <li style="margin-bottom: 8px;">Published over three fully functional mobile applications on the Apple App Store and Google Play Store. Gained practical experience in all stages of software development, including design, coding, testing, and deployment.</li>
+                <li style="margin-bottom: 8px;">Built real-time chat and communication features using Firebase and WebSockets to provide smooth and reliable messaging between users.</li>
+                <li style="margin-bottom: 8px;">Implemented push notifications through Firebase Cloud Messaging (FCM) and Apple Push Notification Service (APNs), and used deep linking to improve user engagement.</li>
+                <li style="margin-bottom: 8px;">Performed detailed testing, debugging, and performance improvements to make sure the applications run efficiently and without errors.</li>
+                <li style="margin-bottom: 8px;">Worked closely with other developers and designers to create scalable, easy-to-use applications that meet both user and business needs.</li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Flutter Developer</h4>
+
+              <span>01/Nov/2022 — 30/Mar/2023</span>
+
+              <p class="timeline-text">
+                Salsoft Technologies, Karachi.
+              </p>
+              <ul style="margin-left: 20px; margin-top: 10px; list-style-type: disc; color: hsl(0, 0%, 84%);">
+                <li style="margin-bottom: 8px;">Developed and launched multiple cross-platform mobile applications using Flutter, targeting both Android and iOS platforms.</li>
+                <li style="margin-bottom: 8px;">Effectively utilizing Flutter widgets and APIs to construct the app's UI and functionalities.</li>
+                <li style="margin-bottom: 8px;">Worked closely with designers, UI/UX experts and Backend developers to ensure a cohesive development process.</li>
+                <li style="margin-bottom: 8px;">Identify and fix bugs during development and after deployment.</li>
+                <li style="margin-bottom: 8px;">Using Git for version control, collaborating with other developers.</li>
+              </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Flutter & Dart</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Node.js & JavaScript</h5>
+                <data value="85">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Firebase & Cloud</h5>
+                <data value="80">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database & APIs</h5>
+                <data value="85">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile App</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web App</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile App</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web App</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Backend</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="mobile app">
+              <a href="https://play.google.com/store/apps/details?id=com.futurbyte.regive.hub" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/regive_logo.png" alt="Regive Hub" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Regive Hub</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile app">
+              <a href="https://play.google.com/store/apps/details?id=com.futurbyte.purpose.payment" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/purpose_payment.png" alt="Purpose Payment" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Purpose Payment</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile app">
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aidance.png" alt="Aidance App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Aidance App</h3>
+
+                <p class="project-category">Mobile App</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@anasbinazim90/mastering-flutter-state-management-getx-provider-and-riverpod-guide" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Flutter State Management" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Flutter</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-01-15">Jan 15, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Mastering Flutter State Management</h3>
+
+                  <p class="blog-text">
+                    Explore GetX, Provider, and Riverpod state management solutions for building scalable Flutter applications.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@anasbinazim90/building-scalable-apis-with-nodejs-best-practices" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Node.js Best Practices" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Node.js</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-01-10">Jan 10, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building Scalable APIs with Node.js</h3>
+
+                  <p class="blog-text">
+                    Learn best practices for designing RESTful APIs and implementing clean architecture with Express.js.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@anasbinazim90/real-time-features-with-firebase-flutter-guide" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Firebase Integration" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Firebase</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-01-05">Jan 5, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Real-Time Features with Firebase</h3>
+
+                  <p class="blog-text">
+                    Implement real-time chat, push notifications, and cloud messaging in your Flutter applications.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@anasbinazim90/mongodb-database-design-patterns" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="Database Design" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Database</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-12-28">Dec 28, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">MongoDB Database Design Patterns</h3>
+
+                  <p class="blog-text">
+                    Optimize your database schema for performance and scalability using MongoDB design patterns.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@anasbinazim90/api-testing-debugging-techniques-postman" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="API Testing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Backend</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-12-20">Dec 20, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">API Testing & Debugging Techniques</h3>
+
+                  <p class="blog-text">
+                    Master API testing with Postman, debugging tools, and best practices for ensuring API reliability.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://medium.com/@anasbinazim90/deploying-applications-on-aws-ec2-s3-guide" target="_blank">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Cloud Deployment" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Cloud</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2024-12-15">Dec 15, 2024</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Deploying Applications on AWS</h3>
+
+                  <p class="blog-text">
+                    Step-by-step guide to deploying Flutter apps and Node.js backends on AWS EC2 and S3.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3619.2830849505765!2d67.00641!3d24.8607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e06651d0c0d%3A0x9cf92f44555555!2sKarachi%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2s!4v1622000000000"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <h2>Web Development</h2>
-                <div class="box">
-                    <div class="education-content">
-    <div class="content">
-        <div class="year">2021-22<i class='bx bxs-calendar'></i></div>
-        <h3>Django-based Blog post application</h3>
-        <ul style="font-size: 16px;">
-            <li>Designed and implemented a Django application with <strong>CRUD</strong> (Create, Read, Update, Delete) functionality for user posts.</li>
-            <li>Integrated user <strong>authentication</strong> and role-based access control for secure and personalized interactions.</li>
-            <li>Optimized <strong>database</strong> models to support efficient data retrieval and smooth performance.</li>
-            <li>Developed a responsive and user-friendly interface to enhance user engagement and content sharing.</li>
-        </ul>
-        <div class="social-media">
-            <i class='bx bxl-django' style="--vlr:7"></i>
-            <i class='bx bxl-postgresql' style="--vlr:8"></i>
-            <i class='bx bxl-github' style="--vlr:9"></i>
-                </div>
-    </div>
-</div>
 
+  </main>
 
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- *************************Skills Section************************* -->
-    <section class="skills" id="skills">
-        <h2 class="title">My <span>Skills</span></h2>
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
 
-        <div class="box">
-            <div class="education-content">
-<div class="content"> <br><br>
-<ul style="font-size: 18px;  margin: 20px;" >
-    <li> <strong>Programming Languages : </strong>Python, Dart, JavaScript (basic understanding)</li>
-    <li><strong>Framework : </strong> Flutter</li>
-    <li><strong>State Management : </strong> GetX, Provider</li>
-    <li><strong>Backend Integration : </strong> RESTful APIs, Firebase Authentication/Database</li>
-    <li><strong>Cloud Services : </strong> Firebase Cloud Messaging (FCM), Google Cloud, AWS (basic understanding)</li>
-    <li><strong>Databases : </strong> MySQL, SQLite, PostgreSQL, Firebase Realtime Database</li>
-    <li><strong>Version Control : </strong> Git, GitHub</li>
-</ul>
-<div class="social-media">
-    <i class='bx bxl-python' style="--vlr:7"></i>
-    <i class='bx bxl-javascript' style="--vlr:7"></i>
-    <i class='bx bxl-flutter' style="--vlr:7"></i>
-    <i class='bx bxl-firebase' style="--vlr:7"></i>
-    <i class='bx bxl-django' style="--vlr:7"></i>
-    <i class='bx bxl-html5' style="--vlr:7"></i>
-    <i class='bx bxl-css3' style="--vlr:7"></i>
-    <i class='bx bxl-bootstrap' style="--vlr:7"></i>
-    <i class='bx bxl-tailwind-css' style="--vlr:7"></i>
-    <i class='bx bxl-postgresql' style="--vlr:8"></i>
-    <i class='bx bxl-mongodb' style="--vlr:8"></i>
-    <i class='bx bxl-google-cloud' style="--vlr:8"></i>
-    <i class='bx bxl-github' style="--vlr:9"></i>
-        </div>
-</div>
-</div>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-
-        </div>
-    </section>
-    <!-- *************************Contact Section************************* -->
-    <section class="contact" id="contact">
-        <h2 class="title">Contact<span>Me</span></h2>
-        <div class="box">
-            <div class="education-content">
-                <div class="content"> 
-                    <br><br>
-                    <ul style="font-size: 18px; margin: 20px;">
-                        <li><strong>Full Name: </strong>Anas Bin Azim</li>
-                        <li><strong>Phone Numbers: </strong> 
-                            <a href="tel:+923402746217">+92 340 2746217</a>, 
-                            <a href="tel:+923193110082">+92 319 3110082</a>
-                        </li>
-                        <li><strong>Email: </strong> 
-                            <a href="mailto:anasbinazim90@gmail.com">anasbinazim90@gmail.com</a>
-                        </li>
-                    </ul>
-                    <div class="social-media">
-                        <a href="https://wa.me/923402746217" target="_blank">
-                        <i class='bx bx-phone' style="--vlr:7"></i></a>
-                        <a href="mailto:anasbinazim90@gmail.com" target="_blank" style="text-decoration: none;">
-                        <i class='bx bxl-gmail' style="--vlr:7"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    
-    
-    <footer>
-        <div class="text">
-            <p>Copyright @ 2024 by Anas Bin Azim</p>
-        </div>
-       <a href="#"> <i class='bx bx-up-arrow-alt'></i></a>
-    </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
