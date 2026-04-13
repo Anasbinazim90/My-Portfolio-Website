@@ -180,7 +180,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link>Certifications</button>
           </li>
 
           <li class="navbar-item">
@@ -345,15 +345,17 @@
 
         </section>
 
-        <!--
-          - testimonials modal
-        -->
+      </article>
 
-        <div class="modal-container" data-modal-container>
+      <!--
+        - modals
+      -->
 
-          <div class="overlay" data-overlay></div>
+      <div class="modal-container" data-modal-container>
 
-          <section class="testimonials-modal">
+        <div class="overlay" data-overlay></div>
+
+        <section class="testimonials-modal">
 
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
@@ -387,11 +389,29 @@
 
           </section>
 
+          <section class="project-modal" data-project-modal>
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <figure class="modal-avatar-box">
+              <img src="" alt="Project Image" style="width: 100%; height: auto; border-radius: 14px;" data-project-modal-img>
+            </figure>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-project-modal-title>Project Name</h4>
+
+              <div data-project-modal-text>
+                <p>Project details will go here.</p>
+              </div>
+
+            </div>
+
+          </section>
+
         </div>
-
-
-
-      </article>
 
       <!--
         - #RESUME
@@ -400,7 +420,13 @@
       <article class="resume" data-page="resume">
 
         <header>
-          <h2 class="h2 article-title">Resume</h2>
+          <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 20px;">
+            <h2 class="h2 article-title">Resume</h2>
+            <a href="./ANAS_CV_APR.pdf" download class="form-btn" style="text-decoration: none; width: auto; margin-left: auto; margin-top: 70px; z-index: 1;">
+              <ion-icon name="download-outline"></ion-icon>
+              <span>Download Resume</span>
+            </a>
+          </div>
         </header>
 
         <section class="timeline">
@@ -636,7 +662,47 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="mobile app">
+            <li class="project-item  active" data-filter-item data-category="backend" data-project-item>
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/monily.png" alt="Monily - Financial dashboard backend" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Monily</h3>
+
+                <p class="project-category">Backend (Node.js, Express, MySQL)</p>
+                <div data-project-text style="display: none;">
+                  <p>Monily is a comprehensive financial dashboard backend built with Node.js, Express, and MySQL. It features robust REST APIs, authentication tracking, dynamic reporting functionalities, and high performance data processing to handle complex accounting metrics securely.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile app" data-project-item>
+              <a href="#" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/auto-intel-turo.png" alt="Auto Intel Turo Application" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Auto Intel Turo Application</h3>
+
+                <p class="project-category">Mobile App</p>
+                <div data-project-text style="display: none;">
+                  <p>Auto Intel Turo Application is an innovative mobile platform bridging car owners and renters. Built cross-platform, it delivers real-time booking updates, integrated payment gateways, interactive map features, and an intuitive user interface to streamline the vehicle sharing process.</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="mobile app" data-project-item>
               <a href="https://play.google.com/store/apps/details?id=com.futurbyte.regive.hub" target="_blank">
 
                 <figure class="project-img">
@@ -650,11 +716,13 @@
                 <h3 class="project-title">Regive Hub</h3>
 
                 <p class="project-category">Mobile App</p>
-
+                <div data-project-text style="display: none;">
+                  <p>Regive Hub provides a seamless platform for managing donations and driving community contributions. Utilizing modern frameworks, this mobile app ensures highly engaging experiences with real-time tracking, transparent funding history, and easily accessible donation channels.</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="mobile app">
+            <li class="project-item  active" data-filter-item data-category="mobile app" data-project-item>
               <a href="https://play.google.com/store/apps/details?id=com.futurbyte.purpose.payment" target="_blank">
 
                 <figure class="project-img">
@@ -668,11 +736,13 @@
                 <h3 class="project-title">Purpose Payment</h3>
 
                 <p class="project-category">Mobile App</p>
-
+                <div data-project-text style="display: none;">
+                  <p>Purpose Payment makes transactions fast and reliable. A financial utility application crafted for highly secure, low-latency payments. It features modern cryptographic security standards, intuitive navigation, and instant notification capabilities making mobile finances straightforward.</p>
+                </div>
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="mobile app">
+            <li class="project-item  active" data-filter-item data-category="mobile app" data-project-item>
               <a href="#" target="_blank">
 
                 <figure class="project-img">
@@ -700,10 +770,10 @@
         - #BLOG
       -->
 
-      <article class="blog" data-page="blog">
+      <article class="blog" data-page="certifications">
 
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h2 article-title">Certifications</h2>
         </header>
 
         <section class="blog-posts">
@@ -711,26 +781,26 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="https://medium.com/@anasbinazim90/mastering-flutter-state-management-getx-provider-and-riverpod-guide" target="_blank">
+              <a href="#" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Flutter State Management" loading="lazy">
+                  <img src="./assets/images/AWS-Certified-Cloud-Practitioner-1.jpg" alt="AWS Cloud Practitioner" loading="lazy" style="height: 100%; object-fit: cover;">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Flutter</p>
+                    <p class="blog-category">Certification</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2025-01-15">Jan 15, 2025</time>
+                    <time datetime="2026-04-13">In Progress</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Mastering Flutter State Management</h3>
+                  <h3 class="h3 blog-item-title">AWS Cloud Practitioner</h3>
 
                   <p class="blog-text">
-                    Explore GetX, Provider, and Riverpod state management solutions for building scalable Flutter applications.
+                    Pursuing the AWS Certified Cloud Practitioner certification to validate my overall understanding of the AWS Cloud platform, covering basic cloud concepts and security.
                   </p>
 
                 </div>
@@ -739,26 +809,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://medium.com/@anasbinazim90/building-scalable-apis-with-nodejs-best-practices" target="_blank">
+              <a href="#" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Node.js Best Practices" loading="lazy">
+                  <img src="./assets/images/Flutter-Developer---A-Complete-roadmap-image.png" alt="Flutter Development" loading="lazy" style="height: 100%; object-fit: cover;">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Node.js</p>
+                    <p class="blog-category">Certification</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2025-01-10">Jan 10, 2025</time>
+                    <time datetime="2024-01-01">Completed</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Building Scalable APIs with Node.js</h3>
+                  <h3 class="h3 blog-item-title">Flutter Development</h3>
 
                   <p class="blog-text">
-                    Learn best practices for designing RESTful APIs and implementing clean architecture with Express.js.
+                    Completed a comprehensive Flutter Development boot camp by Jawan Pakistan. Focused on building cross-platform real-world applications.
                   </p>
 
                 </div>
@@ -767,26 +837,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://medium.com/@anasbinazim90/real-time-features-with-firebase-flutter-guide" target="_blank">
+              <a href="#" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Firebase Integration" loading="lazy">
+                  <img src="./assets/images/cisco-python.jpg" alt="Python Programming" loading="lazy" style="height: 100%; object-fit: cover;">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Firebase</p>
+                    <p class="blog-category">Certification</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2025-01-05">Jan 5, 2025</time>
+                    <time datetime="2023-08-01">Completed</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Real-Time Features with Firebase</h3>
+                  <h3 class="h3 blog-item-title">Programming Essentials in Python</h3>
 
                   <p class="blog-text">
-                    Implement real-time chat, push notifications, and cloud messaging in your Flutter applications.
+                    Certified in Programming Essentials in Python by Cisco Networking Academy, demonstrating foundational knowledge of Python programming and data structures.
                   </p>
 
                 </div>
@@ -795,82 +865,26 @@
             </li>
 
             <li class="blog-post-item">
-              <a href="https://medium.com/@anasbinazim90/mongodb-database-design-patterns" target="_blank">
+              <a href="#" target="_blank">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="Database Design" loading="lazy">
+                  <img src="./assets/images/node-express.png" alt="Node.js and Express.js Course" loading="lazy" style="height: 100%; object-fit: cover;">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Database</p>
+                    <p class="blog-category">Course</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2024-12-28">Dec 28, 2024</time>
+                    <time datetime="2024-05-01">Completed</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">MongoDB Database Design Patterns</h3>
+                  <h3 class="h3 blog-item-title">Node.js + Express.js Mastery</h3>
 
                   <p class="blog-text">
-                    Optimize your database schema for performance and scalability using MongoDB design patterns.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@anasbinazim90/api-testing-debugging-techniques-postman" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="API Testing" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Backend</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-12-20">Dec 20, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">API Testing & Debugging Techniques</h3>
-
-                  <p class="blog-text">
-                    Master API testing with Postman, debugging tools, and best practices for ensuring API reliability.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@anasbinazim90/deploying-applications-on-aws-ec2-s3-guide" target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="Cloud Deployment" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Cloud</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2024-12-15">Dec 15, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Deploying Applications on AWS</h3>
-
-                  <p class="blog-text">
-                    Step-by-step guide to deploying Flutter apps and Node.js backends on AWS EC2 and S3.
+                    Completed comprehensive training on Node.js and Express.js via YouTube, learning to build robust, scalable, and secure backend RESTful APIs.
                   </p>
 
                 </div>
