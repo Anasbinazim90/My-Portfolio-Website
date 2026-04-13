@@ -20,7 +20,7 @@ yarn-error.log*
 node_modules/
 package-lock.json
 yarn.lock
-
+ANAS_CV_APR.pdf
 # Build outputs (if you add build tools)
 dist/
 build/
