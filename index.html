@@ -208,6 +208,7 @@
             Recently, I’ve been exploring Agentic AI — building intelligent systems that can automate workflows, interact with tools, and enhance user experiences beyond traditional applications.<br><br>
             Alongside this, I’m actively working on cloud technologies, currently pursuing AWS certifications to strengthen my expertise in cloud architecture and deployment.<br><br>
             What I bring:<br>
+            • AI-powered tools — Chrome extensions, chatbots &amp; LLM integrations (Gemini · Groq · Vision)<br>
             • Cross-platform mobile development using Flutter<br>
             • Backend development with Node.js (Express) & Flask<br>
             • REST API design and third-party integrations<br>
@@ -290,6 +291,22 @@
 
                 <p class="service-item-text">
                   Designing and implementing scalable data architectures with MongoDB, Firebase real-time databases, and AWS cloud solutions. Expertise in data modeling, cloud deployment strategies, and building robust data pipelines for modern applications.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-ai.svg" alt="AI icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI Development</h4>
+
+                <p class="service-item-text">
+                  Building AI-powered tools that fit real workflows — custom Chrome extensions, chatbots and assistants, and automations. Multi-provider LLM integrations (Gemini, Groq) with streaming responses and vision to read images, receipts, and documents into structured data.
                 </p>
               </div>
 
@@ -630,6 +647,10 @@
               <button data-filter-btn>Backend</button>
             </li>
 
+            <li class="filter-item">
+              <button data-filter-btn>AI</button>
+            </li>
+
           </ul>
 
           <div class="filter-select-box">
@@ -662,11 +683,57 @@
                 <button data-select-item>Backend</button>
               </li>
 
+              <li class="select-item">
+                <button data-select-item>AI</button>
+              </li>
+
             </ul>
 
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="ai" data-project-item>
+              <a href="https://github.com/Anasbinazim90" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-peekai.png" alt="Peek AI - AI Chrome extension" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Peek AI</h3>
+
+                <p class="project-category">AI Chrome Extension</p>
+                <div data-project-text style="display: none;">
+                  <p>Peek AI is a Chrome extension that explains, translates, and summarizes anything on your screen — highlight text or screenshot the page and get an instant AI answer, right where you are. Built with multi-provider support (Gemini + Groq), live streaming responses, image understanding, and a Shadow-DOM UI that never clashes with the host site.</p>
+                  <p><strong>Stack:</strong> TypeScript · React · Chrome MV3 · Gemini · Groq · Vision</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="ai" data-project-item>
+              <a href="https://anasbinazim90.github.io/snapsheet-landing/" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-snapsheet.png" alt="SnapSheet - screenshot to spreadsheet" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SnapSheet</h3>
+
+                <p class="project-category">Vision AI · Product</p>
+                <div data-project-text style="display: none;">
+                  <p>SnapSheet turns any table, chart, or receipt on your screen into a clean spreadsheet — CSV, Excel, or JSON in one click. I built the vision-extraction engine and the full go-to-market landing page. <a href="https://anasbinazim90.github.io/snapsheet-landing/" target="_blank" style="color:#ffdb70;">View the live site →</a></p>
+                  <p><strong>Stack:</strong> Vision AI · Groq · CSV / Excel export</p>
+                </div>
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="backend" data-project-item>
               <a href="#" target="_blank">
@@ -926,7 +993,10 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formspree.io/f/xnjeyqng" method="POST" class="form" data-form>
+
+            <input type="hidden" name="_subject" value="New message from your portfolio">
+            <input type="hidden" name="_next" value="https://my-portfolio-website-theta-sable-73.vercel.app/">
 
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
