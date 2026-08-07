@@ -1832,3 +1832,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* ---- Fix: project modal description text should be readable white ---- */
+.project-modal [data-project-modal-text],
+.project-modal [data-project-modal-text] * { color: var(--white-2) !important; }
+.project-modal [data-project-modal-text] a { color: var(--orange-yellow-crayola) !important; }
